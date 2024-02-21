@@ -4,7 +4,11 @@
 
 You will have to install Flask and boto3 libraries for this code.
 
+Install Flask:
+
      pip install Flask
+
+Install boto3
      
      pip install boto3
 
