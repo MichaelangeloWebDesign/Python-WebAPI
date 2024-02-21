@@ -1,12 +1,10 @@
 import boto3
 # Set up AWS credentials (you can also use environment variables or IAM roles)
-dynamodb = boto3.resource('dynamodb', region_name='eu-central-1', aws_access_key_id='AKIA3JDNG3KJK5AL6LHP', aws_secret_access_key='Mc1N0fbYntE3MnCo2YXpsQhMw9SZoXqPGlRm9fi4')
-table = dynamodb.Table('demo')
-
+dynamodb = boto3.resource('dynamodb', region_name='eu-central-1', aws_access_key_id='YOUR_KEY', aws_secret_access_key='YOUR_SECRET')
 
 # Create the DynamoDB table.
 table = dynamodb.create_table(
-    TableName='tabletest',
+    TableName='TABLE_NAME',
     KeySchema=[
         {
             'AttributeName': 'id',
